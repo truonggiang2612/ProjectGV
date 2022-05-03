@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+     <!-- LINK cndjs để search icon trên fontawesome -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"/>
+
+      <!-- LINK slick BẤM html-slick-css-->
+      <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+
+    <!--Reset CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/Project/assets/fonts/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/Project/assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Project/assets/css/mainGV.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+           <div class="header_container">
+                    <!--Logo image-->
+                <div class="header__logo">
+                    <img src="assets/img/logo_nshop.png" alt="Logo nshop">
+                </div>
+
+                <!--Form search-->
+                <div class="search-box">
+                    <i class="ti-search"></i>
+                    <input class="search-txt" type="text" name="" placeholder="Type to search..." >
+                </div>
+
+                <!--Cart and User-->
+                <div class="header__info">
+                    <button class="cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Giỏ Hàng
+                    </button>
+                    <button class="user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Tài Khoản
+                    </button>
+                </div>
+           </div>
+        </header>
+    
+        <!--Navigation-->
+        <div id="nav">
+           <div class="nav_container">
+               <div class="nav_left">
+                    <ul class="nav_left-introduce">
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Hệ thống cửa hàng</a></li>
+                    </ul>
+               </div>
+               <div class="nav_right">
+                    <ul class="nav_right-contact">
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="">info@nshopvn.com</a></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="">Tân Phú: 0902 643 978</a></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="">Quận 9: 0932 723 186</a></li>
+                        <li class="contact"><a href="">LIÊN HỆ<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="sub_menu">
+                                <h4>Bán hàng</h4>
+                                <li><i class="fa fa-user-circle" aria-hidden="true"></i>Quận 9: 093 27 23 186</li>
+                                <li><i class="fa fa-user-circle" aria-hidden="true"></i>Quận 9: 093 27 34 186</li>
+                                <li><i class="fa fa-user-circle" aria-hidden="true"></i>Tân Phú: 0902 64 39 78</li>
+                                <li><i class="fa fa-user-circle" aria-hidden="true"></i>Tân Phú: 0904 83 35 36</li>
+                                <h4>Kỹ thuật</h4>
+                                <li><i class="fa fa-user-circle" aria-hidden="true"></i>0339 449 749</li>
+                            </ul>
+                        </li>  
+                    </ul>
+               </div>
+           </div>
+           </div>
+        </div>
+    
+        <!--Container-->
+        <div id="container">
+           <div class="container_content">
+                <div class="taskbar">
+                    <div class="list_nav">
+                        <h5>DANH MỤC SẢN PHẨM</h5>
+                        <ul class="list_chose">
+                            <li><img src="assets/img/arduino.png" alt=""><a href="#">Ardunio</a></li>
+                            <li><img src="assets/img/cam-bien.png" alt=""><a href="#">Cảm biến</a></li>
+                            <li><img src="assets/img/combo.png" alt=""><a href="#">Combo khuyến mãi</a></li>
+                            <li><img src="assets/img/den-led-dieu-khien-den-led.png" alt=""><a href="#">Đèn LED, Điều khiển LED</a></li>
+                            <li><img src="assets/img/dien-dan-dung-va-cong-nghiep.png" alt=""><a href="#">Điện dân dụng và Công nghiệp</a></li>
+                            <li><img src="assets/img/dien-nang-luong-mat-troi-solar.png" alt=""><a href="#">Điện năng lượng mặt trời</a></li>
+                            <li><img src="assets/img/dong-ho-van-nang.png" alt=""><a href="#">Đồng hồ vạn năng</a></li>
+                            <li><img src="assets/img/may-in-3d-cong-nghe.png" alt=""><a href="#">Máy in 3D, Công nghệ</a></li>
+                            <li><img src="assets/img/module-mach-dien.png" alt=""><a href="#">Module, Mạch điện</a></li>
+                            <li><img src="assets/img/phu-kien-dung-cu.png" alt=""><a href="#">Phụ kiện, Dụng cụ</a></li>
+                            <li><img src="assets/img/robot-phu-kien-diy.png" alt=""><a href="#">Robot, Phụ kiện DIY</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>KẾT NỐI VỚI NSHOP</h5>
+                        <ul class="contact_nshop">
+                            <li><i class="ti-facebook"></i><a href="#">Linh kiện điện tử NShop</a></li>
+                            <li><i class="fa fa-users" aria-hidden="true"></i><a href="#">Hội đam mê cơ điện tử</a></li>
+                            <li><i class="ti-youtube"></i><a href="#">Kênh youtube của Nshop</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>KHÁC</h5>
+                        <ul class="task_more">
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li><a href="#">Kiểm tra đơn hàng</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    
+                    <!--Slider-->
+                    <div class="image-slider">
+                        <div class="image-item">
+                            <img src="assets/img/slider1.jpg" alt="slider1" class="imgslider1">
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/slider2.jpg" alt="slider2" class="imgslider2">
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/slider3.jpg" alt="slider3" class="imgslider3">
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/slider5.jpg" alt="slider4" class="imgslider4">
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/slider7.jpg" alt="slider5" class="imgslider5">
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/slider8.jpg" alt="slider6" class="imgslider6">
+                        </div>
+                        
+                            
+                            
+                            
+                          
+                            
+                            
+                        
+                    </div>
+                     <!-- NHỮNG FILE JS của Slick-slider BẤM Html-slick-slider-->
+                     <script
+                       type="text/javascript"
+                       src="https://code.jquery.com/jquery-1.11.0.min.js"
+                     ></script>
+                     <script
+                       type="text/javascript"
+                       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+                     ></script>
+                     <script
+                       type="text/javascript"
+                       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+                     ></script>
+
+                     <!-- LINK file javascript -->
+                    <script src="/Project/assets/css/appGV.js"></script>
+                   
+                    <!--List item-->
+                   <div class="content-list-item">
+                        <!-- block 1 -->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cong-tac-4-chan-2-vi-tri-kcd4-xvke-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Công tắc 4 chân 2 vị trí KCD4 | Công tắc bập bênh...</p>
+                                    <span>7.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cong-tac-4-chan-2-vi-tri-kcd4-cong-tac-bap-benh-mau-do-srit-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Công tắc 4 chân 2 vị trí KCD4 | Công tắc bập bênh Màu đỏ</p>
+                                    <span>8.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/o-cam-3-lo-gan-chim-z1a1-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Ổ cắm 3 lỗ gắn chìm WN-801</p>
+                                    <span>16.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/o-cam-gan-hop-co-tai-tich-hop-hop-cau-chi-xeen-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Ổ cắm gắn hộp có tai tích hợp hộp cầu chì</p>
+                                    <span>10.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/o-cam-gan-hop-3-chau-co-tai-m63m-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Ổ cắm gắn hộp 3 chấu có tai</p>
+                                    <span>6.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="list_item_1_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/o-cam-nguon-so-8-gan-hop-2xw3-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Ổ cắm nguồn số 8 gắn hộp</p>
+                                    <span>6.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cong-tac-4-chan-2-vi-tri-y3a5-6-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Công tắc bập bênh 4 chân 2 vị trí KCD5-201</p>
+                                    <span>5.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cong-tac-co-den-kcd1-104-zokm-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Công tắc bập bênh 4 chân có đèn KCD1-104</p>
+                                    <span>8.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cong-tac-6-chan-3-vi-tri-cong-tac-dao-chieu-vlcf-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Công tắc 6 chân 3 vị trí KCD4 | công tắc đảo chiều</p>
+                                    <span>25.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cong-tac-6-chan-2-vi-tri-mau-do-8sz5-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Công tắc 6 chân 2 vị trí KCD4 màu đỏ</p>
+                                    <span>9.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- block 2 -->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="list_item_1_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-dieu-khien-nhiet-do-dong-ngat-relay-220vac-stc-1000-uhsk-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ điều khiển nhiệt độ đóng ngắt Relay 220VAC...</p>
+                                    <span>297.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/dong-co-dc-servo-giam-toc-jgb37-342q-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Động cơ DC Servo giảm tốc JGB37</p>
+                                    <span>245.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mach-thu-phat-rf-uart-lora-sx1278-433mhz-3000m-wfmr-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mạch thu phát RF UART lora SX1278 433Mhz 3000m</p>
+                                    <span>258.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/nguon-12v30a-nguon-to-ong-849V-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Nguồn tổ ong 12V 30A</p>
+                                    <span>260.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mo-han-chi-dieu-chinh-nhiet-do-no-911-60w-5-mui-han-mieng-gac-4hti-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mỏ hàn chì điều chỉnh nhiệt độ NO.911 60W + 5mũi...</p>
+                                    <span>160.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- block 3 -->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="list_item_1_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-dieu-khien-nhiet-do-dong-ngat-relay-220vac-stc-1000-uhsk-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ điều khiển nhiệt độ đóng ngắt Relay 220VAC...</p>
+                                    <span>297.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/dong-co-dc-servo-giam-toc-jgb37-342q-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Động cơ DC Servo giảm tốc JGB37</p>
+                                    <span>245.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mach-thu-phat-rf-uart-lora-sx1278-433mhz-3000m-wfmr-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mạch thu phát RF UART lora SX1278 433Mhz 3000m</p>
+                                    <span>258.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/nguon-12v30a-nguon-to-ong-849V-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Nguồn tổ ong 12V 30A</p>
+                                    <span>260.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mo-han-chi-dieu-chinh-nhiet-do-no-911-60w-5-mui-han-mieng-gac-4hti-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mỏ hàn chì điều chỉnh nhiệt độ NO.911 60W + 5mũi...</p>
+                                    <span>160.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- block 4 -->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="list_item_1_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-dieu-khien-nhiet-do-dong-ngat-relay-220vac-stc-1000-uhsk-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ điều khiển nhiệt độ đóng ngắt Relay 220VAC...</p>
+                                    <span>297.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/dong-co-dc-servo-giam-toc-jgb37-342q-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Động cơ DC Servo giảm tốc JGB37</p>
+                                    <span>245.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mach-thu-phat-rf-uart-lora-sx1278-433mhz-3000m-wfmr-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mạch thu phát RF UART lora SX1278 433Mhz 3000m</p>
+                                    <span>258.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/nguon-12v30a-nguon-to-ong-849V-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Nguồn tổ ong 12V 30A</p>
+                                    <span>260.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mo-han-chi-dieu-chinh-nhiet-do-no-911-60w-5-mui-han-mieng-gac-4hti-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mỏ hàn chì điều chỉnh nhiệt độ NO.911 60W + 5mũi...</p>
+                                    <span>160.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- block 5 -->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="list_item_1_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-dieu-khien-nhiet-do-dong-ngat-relay-220vac-stc-1000-uhsk-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ điều khiển nhiệt độ đóng ngắt Relay 220VAC...</p>
+                                    <span>297.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/dong-co-dc-servo-giam-toc-jgb37-342q-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Động cơ DC Servo giảm tốc JGB37</p>
+                                    <span>245.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mach-thu-phat-rf-uart-lora-sx1278-433mhz-3000m-wfmr-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mạch thu phát RF UART lora SX1278 433Mhz 3000m</p>
+                                    <span>258.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/nguon-12v30a-nguon-to-ong-849V-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Nguồn tổ ong 12V 30A</p>
+                                    <span>260.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mo-han-chi-dieu-chinh-nhiet-do-no-911-60w-5-mui-han-mieng-gac-4hti-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mỏ hàn chì điều chỉnh nhiệt độ NO.911 60W + 5mũi...</p>
+                                    <span>160.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- block 6 -->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="list_item_1_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-dieu-khien-nhiet-do-dong-ngat-relay-220vac-stc-1000-uhsk-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ điều khiển nhiệt độ đóng ngắt Relay 220VAC...</p>
+                                    <span>297.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/dong-co-dc-servo-giam-toc-jgb37-342q-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Động cơ DC Servo giảm tốc JGB37</p>
+                                    <span>245.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mach-thu-phat-rf-uart-lora-sx1278-433mhz-3000m-wfmr-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mạch thu phát RF UART lora SX1278 433Mhz 3000m</p>
+                                    <span>258.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/nguon-12v30a-nguon-to-ong-849V-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Nguồn tổ ong 12V 30A</p>
+                                    <span>260.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mo-han-chi-dieu-chinh-nhiet-do-no-911-60w-5-mui-han-mieng-gac-4hti-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mỏ hàn chì điều chỉnh nhiệt độ NO.911 60W + 5mũi...</p>
+                                    <span>160.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- block 7 -->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="list_item_1_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-dieu-khien-nhiet-do-dong-ngat-relay-220vac-stc-1000-uhsk-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ điều khiển nhiệt độ đóng ngắt Relay 220VAC...</p>
+                                    <span>297.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/dong-co-dc-servo-giam-toc-jgb37-342q-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Động cơ DC Servo giảm tốc JGB37</p>
+                                    <span>245.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mach-thu-phat-rf-uart-lora-sx1278-433mhz-3000m-wfmr-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mạch thu phát RF UART lora SX1278 433Mhz 3000m</p>
+                                    <span>258.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/nguon-12v30a-nguon-to-ong-849V-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Nguồn tổ ong 12V 30A</p>
+                                    <span>260.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mo-han-chi-dieu-chinh-nhiet-do-no-911-60w-5-mui-han-mieng-gac-4hti-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mỏ hàn chì điều chỉnh nhiệt độ NO.911 60W + 5mũi...</p>
+                                    <span>160.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!--block 8-->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="list_item_1_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-dieu-khien-nhiet-do-dong-ngat-relay-220vac-stc-1000-uhsk-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ điều khiển nhiệt độ đóng ngắt Relay 220VAC...</p>
+                                    <span>297.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/dong-co-dc-servo-giam-toc-jgb37-342q-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Động cơ DC Servo giảm tốc JGB37</p>
+                                    <span>245.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mach-thu-phat-rf-uart-lora-sx1278-433mhz-3000m-wfmr-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mạch thu phát RF UART lora SX1278 433Mhz 3000m</p>
+                                    <span>258.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/nguon-12v30a-nguon-to-ong-849V-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Nguồn tổ ong 12V 30A</p>
+                                    <span>260.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mo-han-chi-dieu-chinh-nhiet-do-no-911-60w-5-mui-han-mieng-gac-4hti-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mỏ hàn chì điều chỉnh nhiệt độ NO.911 60W + 5mũi...</p>
+                                    <span>160.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!--block 9-->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="list_item_1_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-dieu-khien-nhiet-do-dong-ngat-relay-220vac-stc-1000-uhsk-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ điều khiển nhiệt độ đóng ngắt Relay 220VAC...</p>
+                                    <span>297.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/dong-co-dc-servo-giam-toc-jgb37-342q-2-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Động cơ DC Servo giảm tốc JGB37</p>
+                                    <span>245.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mach-thu-phat-rf-uart-lora-sx1278-433mhz-3000m-wfmr-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mạch thu phát RF UART lora SX1278 433Mhz 3000m</p>
+                                    <span>258.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/nguon-12v30a-nguon-to-ong-849V-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Nguồn tổ ong 12V 30A</p>
+                                    <span>260.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/mo-han-chi-dieu-chinh-nhiet-do-no-911-60w-5-mui-han-mieng-gac-4hti-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Mỏ hàn chì điều chỉnh nhiệt độ NO.911 60W + 5mũi...</p>
+                                    <span>160.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!--block 10 copy-->
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm copy</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_item_new">
+                        <div class="header_item1">
+                            <p>Sản phẩm copy2</p>
+                        </div>
+                        <div class="list_item_1">
+                            <!--Item 1-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-nguon-da-nang-wanptek-kps3010df-30v-10a-wd0s-3-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ nguồn đa năng WANPTEK KPS3010DF 30V...</p>
+                                    <span>1.897.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 2-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/pin-18650-1s-4-2v-3-cell-7800mah-tich-hop-mach-bao-ve-mql9-1-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Pin 18650 1S 4.2V 3cell 7800mAh tích hợp mạch...</p>
+                                    <span>130.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 3-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/may-kho-860d-dieu-chinh-nhiet-do-led-hien-thi-TXOR-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Máy khò điều chỉnh nhiệt độ 860D có led hiển thị</p>
+                                    <span>1.300.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 4-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/bo-bat-tat-may-bom-theo-muc-nuoc-xkc-c352-3p-kem-3-cam-bien-ABEL-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Bộ bật tắt máy bơm nước theo mực nước XKC-C352-3P...</p>
+                                    <span>905.000đ</span>
+                                </div>  
+                            </div>
+                            <!--Item 5-->
+                            <div class="item_new">
+                                <div>
+                                    <img class="img_item" src="assets/img/cam-bien-toc-do-gio-W10W-2020-300x300.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p>Cảm biến tốc độ gió</p>
+                                    <span>1.499.000đ</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>           
+           </div>
+        </div>
+
+         <!--Footer-->
+            <div id="footer">
+                <div class="footer_left">
+                    <ul>
+                        <li><a href="">Bảo hành</a>
+                            <span class="separator"></span>
+                            <a href="">Đổi trả</a>
+                            <span class="separator"></span>
+                            <a href="">Bảo mật</a>
+                            <span class="separator"></span>
+                            <a href="">Điều khoản</a>
+                        </li>
+                    </ul>
+                    <p>Hộ kinh doanh Linh kiện điện tử Nshop / GPĐKKD số: 41X8035261 do UBND Quận Tân Phú cấp ngày 08/05/2019</p>
+                    <p> <strong> Điện tử NShop Tân Phú: </strong> 1 Bùi Xuân Phái, Tây Thạnh, Tân Phú, TP. HCM – 📞 0902 64 39 78</p>
+                    <p> <strong>Điện tử NShop Quận 9:</strong> 7 Trần Hưng Đạo, Hiệp Phú, Quận 9, TP. HCM – 📞 093 27 23 186</p>
+                    <p><strong>NSHOPVN.COM © 2019 - 2021</strong></p>
+                </div>
+                <div class="footer_right">
+                    <div class="logo">
+                        <img src="assets/img/LOGO_dmca_premi_badge_4.png" alt="" class="logo1">
+                        <img src="assets/img/LOGOdathongbao.png" alt="" class="logo2">
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
